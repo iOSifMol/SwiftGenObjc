@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50171F9B29A220DB008975BF /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50171F9A29A220DB008975BF /* Assets+Generated.swift */; };
 		50BDDDF129A1589A002B0DC5 /* SwiftGenObjcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDDDF029A1589A002B0DC5 /* SwiftGenObjcApp.swift */; };
 		50BDDDF329A1589A002B0DC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDDDF229A1589A002B0DC5 /* ContentView.swift */; };
 		50BDDDF529A1589C002B0DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50BDDDF429A1589C002B0DC5 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50171F9A29A220DB008975BF /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = SOURCE_ROOT; };
 		50BDDDED29A1589A002B0DC5 /* SwiftGenObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGenObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BDDDF029A1589A002B0DC5 /* SwiftGenObjcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGenObjcApp.swift; sourceTree = "<group>"; };
 		50BDDDF229A1589A002B0DC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		50BDDDEF29A1589A002B0DC5 /* SwiftGenObjc */ = {
 			isa = PBXGroup;
 			children = (
+				50171F9A29A220DB008975BF /* Assets+Generated.swift */,
 				50BDDDF029A1589A002B0DC5 /* SwiftGenObjcApp.swift */,
 				50BDDDF229A1589A002B0DC5 /* ContentView.swift */,
 				50BDDDF429A1589C002B0DC5 /* Assets.xcassets */,
@@ -77,12 +80,15 @@
 				50BDDDE929A1589A002B0DC5 /* Sources */,
 				50BDDDEA29A1589A002B0DC5 /* Frameworks */,
 				50BDDDEB29A1589A002B0DC5 /* Resources */,
+				50171F9C29A221AA008975BF /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SwiftGenObjc;
+			packageProductDependencies = (
+			);
 			productName = SwiftGenObjc;
 			productReference = 50BDDDED29A1589A002B0DC5 /* SwiftGenObjc.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +117,8 @@
 				Base,
 			);
 			mainGroup = 50BDDDE429A1589A002B0DC5;
+			packageReferences = (
+			);
 			productRefGroup = 50BDDDEE29A1589A002B0DC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +140,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50171F9C29A221AA008975BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftgen\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50BDDDE929A1589A002B0DC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +168,7 @@
 			files = (
 				50BDDDF329A1589A002B0DC5 /* ContentView.swift in Sources */,
 				50BDDDF129A1589A002B0DC5 /* SwiftGenObjcApp.swift in Sources */,
+				50171F9B29A220DB008975BF /* Assets+Generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
