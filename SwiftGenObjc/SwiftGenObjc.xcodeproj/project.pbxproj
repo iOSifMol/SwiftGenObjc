@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0E827630AE9C3754C55368 /* Pods_SwiftGenObjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B676E4DE26B398E05D2FBD38 /* Pods_SwiftGenObjc.framework */; };
 		50171F9B29A220DB008975BF /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50171F9A29A220DB008975BF /* Assets+Generated.swift */; };
 		50BDDDF129A1589A002B0DC5 /* SwiftGenObjcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDDDF029A1589A002B0DC5 /* SwiftGenObjcApp.swift */; };
 		50BDDDF329A1589A002B0DC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDDDF229A1589A002B0DC5 /* ContentView.swift */; };
@@ -21,6 +22,9 @@
 		50BDDDF229A1589A002B0DC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50BDDDF429A1589C002B0DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50BDDDF729A1589C002B0DC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BB3CD2AB91D910A9224200E /* Pods-SwiftGenObjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftGenObjc.debug.xcconfig"; path = "Target Support Files/Pods-SwiftGenObjc/Pods-SwiftGenObjc.debug.xcconfig"; sourceTree = "<group>"; };
+		75B19F1531C1B1CC0E3263FB /* Pods-SwiftGenObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftGenObjc.release.xcconfig"; path = "Target Support Files/Pods-SwiftGenObjc/Pods-SwiftGenObjc.release.xcconfig"; sourceTree = "<group>"; };
+		B676E4DE26B398E05D2FBD38 /* Pods_SwiftGenObjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftGenObjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0E827630AE9C3754C55368 /* Pods_SwiftGenObjc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BA9BFF613F8812F73B167CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BB3CD2AB91D910A9224200E /* Pods-SwiftGenObjc.debug.xcconfig */,
+				75B19F1531C1B1CC0E3263FB /* Pods-SwiftGenObjc.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		50BDDDE429A1589A002B0DC5 = {
 			isa = PBXGroup;
 			children = (
 				50BDDDEF29A1589A002B0DC5 /* SwiftGenObjc */,
 				50BDDDEE29A1589A002B0DC5 /* Products */,
+				3BA9BFF613F8812F73B167CF /* Pods */,
+				E5371ED708D083593594417A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +86,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E5371ED708D083593594417A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B676E4DE26B398E05D2FBD38 /* Pods_SwiftGenObjc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,18 +101,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50BDDDFB29A1589C002B0DC5 /* Build configuration list for PBXNativeTarget "SwiftGenObjc" */;
 			buildPhases = (
+				86FC598F2CCE3582A5081EC1 /* [CP] Check Pods Manifest.lock */,
 				50BDDDE929A1589A002B0DC5 /* Sources */,
 				50BDDDEA29A1589A002B0DC5 /* Frameworks */,
 				50BDDDEB29A1589A002B0DC5 /* Resources */,
-				50171F9C29A221AA008975BF /* ShellScript */,
+				50171F9C29A221AA008975BF /* Assets Generation */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SwiftGenObjc;
-			packageProductDependencies = (
-			);
 			productName = SwiftGenObjc;
 			productReference = 50BDDDED29A1589A002B0DC5 /* SwiftGenObjc.app */;
 			productType = "com.apple.product-type.application";
@@ -117,8 +140,6 @@
 				Base,
 			);
 			mainGroup = 50BDDDE429A1589A002B0DC5;
-			packageReferences = (
-			);
 			productRefGroup = 50BDDDEE29A1589A002B0DC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,7 +162,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		50171F9C29A221AA008975BF /* ShellScript */ = {
+		50171F9C29A221AA008975BF /* Assets Generation */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -151,13 +172,36 @@
 			);
 			inputPaths = (
 			);
+			name = "Assets Generation";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "swiftgen\n";
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+		86FC598F2CCE3582A5081EC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftGenObjc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -291,6 +335,7 @@
 		};
 		50BDDDFC29A1589C002B0DC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BB3CD2AB91D910A9224200E /* Pods-SwiftGenObjc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +364,7 @@
 		};
 		50BDDDFD29A1589C002B0DC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B19F1531C1B1CC0E3263FB /* Pods-SwiftGenObjc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
           Asset.Images.earth.swiftUIImage
-            .scaledToFit()
+                .background(Asset.Colors.imageColor.swiftUIColor)
             Text("Hello, world!")
             .foregroundColor(Asset.Colors.textColor.swiftUIColor)
         }
