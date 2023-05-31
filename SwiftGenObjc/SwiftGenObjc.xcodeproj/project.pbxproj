@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07A4705E2A2239B100243B3E /* assets_objc.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 07A4705D2A2239B100243B3E /* assets_objc.stencil */; };
 		4E0E827630AE9C3754C55368 /* Pods_SwiftGenObjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B676E4DE26B398E05D2FBD38 /* Pods_SwiftGenObjc.framework */; };
 		50171F9B29A220DB008975BF /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50171F9A29A220DB008975BF /* Assets+Generated.swift */; };
 		50BDDDF129A1589A002B0DC5 /* SwiftGenObjcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDDDF029A1589A002B0DC5 /* SwiftGenObjcApp.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07A4705D2A2239B100243B3E /* assets_objc.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = assets_objc.stencil; sourceTree = "<group>"; };
 		50171F9A29A220DB008975BF /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = SOURCE_ROOT; };
 		50BDDDED29A1589A002B0DC5 /* SwiftGenObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGenObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BDDDF029A1589A002B0DC5 /* SwiftGenObjcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGenObjcApp.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		50BDDDEF29A1589A002B0DC5 /* SwiftGenObjc */ = {
 			isa = PBXGroup;
 			children = (
+				07A4705D2A2239B100243B3E /* assets_objc.stencil */,
 				50171F9A29A220DB008975BF /* Assets+Generated.swift */,
 				50BDDDF029A1589A002B0DC5 /* SwiftGenObjcApp.swift */,
 				50BDDDF229A1589A002B0DC5 /* ContentView.swift */,
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BDDDF829A1589C002B0DC5 /* Preview Assets.xcassets in Resources */,
+				07A4705E2A2239B100243B3E /* assets_objc.stencil in Resources */,
 				50BDDDF529A1589C002B0DC5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,7 +168,6 @@
 /* Begin PBXShellScriptBuildPhase section */
 		50171F9C29A221AA008975BF /* Assets Generation */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
